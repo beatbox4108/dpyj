@@ -1,0 +1,19 @@
+{
+    "dpyjversion":1.1,
+    "pythonversion":3,
+    "title":"DPYJ-TEST",
+    "author":"beatbox4108",
+    "code":[
+        {"type":"description","text":[{"text":"this is test.","color":"blue"},{"type":"quote","say":"beatbox4108","text":"this is test."}]},
+        {"file":"test1.dpyj","text":[{"text":"this is test."}],"code":"print(\"dpyj\")\nprint(\"test\")"},
+        {"type":"code","file":"test1.dpyj","code":"print(\"dpyj\")\nprint(\"test\")"},
+        {"type":"gloup","code":[
+            {"text":[{"text":"this is test."}],"code":"print(\"test\")"},
+            {"text":[{"text":"this is test."}],"code":"print(\"tests\")"},
+            {"type":"gloup","code":[
+                {"text":[{"text":"this is test."}],"code":"print(\"test\")"},
+                {"text":[{"text":"this is test."}],"code":"print(\"tests\")"}
+            ]}
+        ]}
+    ]
+}
