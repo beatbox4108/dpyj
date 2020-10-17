@@ -4,10 +4,10 @@
 #######################################
 import json
 import sys
+sys.path.append("/usr/bin/beatbox4108/dpyj/")
 import texts
 import subprocess
 import os
-
 class syntax:
     def __output_text(self):
         self.text+=texts.text("\n",Txt="blue",Bg="yellow").text
