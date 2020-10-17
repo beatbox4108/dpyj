@@ -4,7 +4,7 @@
 #######################################
 import json
 import sys
-sys.path.append("/usr/bin/beatbox4108/dpyj/")
+sys.path.append("/usr/bin/beatbox4108/DPYJ/")
 import texts
 import subprocess
 import os
