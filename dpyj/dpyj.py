@@ -1,13 +1,13 @@
 #! /usr/bin/python3
 #######################################
-#DPYJ(DecoratedPYthonJson)--Version1.1#
+#DPYJ(DecoratedPYthonJson)--Version0.0.1#
 #######################################
 import json
 import sys
-sys.path.append("/usr/bin/beatbox4108/DPYJ/")
 import texts
 import subprocess
 import os
+class VersionError(Exception):pass
 class syntax:
     def __output_text(self):
         self.text+=texts.text("\n",Txt="blue",Bg="yellow").text
@@ -61,6 +61,7 @@ class syntax:
         self.text=""
         self.codeonly=""
         self.write_file={}
+        if self.format["dpyjversion"]!="0.0.1" or self.format["dpyjversion"][:3]!="0.0":throw VersionError("Version is too new , too old or invalid")
         if author!=None:self.format["author"]=author
         if self.format.get("author")==None:
             self.format["author"]="Unknoun"
@@ -95,7 +96,7 @@ class syntax:
 
 if __name__=="__main__":
     if len(sys.argv)==1:
-        print("DPYJ(DecoratedPYthonJson)--Version1.1")
+        print("DPYJ(DecoratedPYthonJson)--Version0.0.1")
     elif len(sys.argv)==2 or (len(sys.argv)==3 and sys.argv[2]=="open"):
         with open(sys.argv[1],"r") as j:
             j=json.load(j)
